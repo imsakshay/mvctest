@@ -1,0 +1,39 @@
+﻿/****** Script for SelectTopNRows command from SSMS  ******/
+use MVCDemo1
+go 
+delete from Student where ID = 1
+
+Insert into Student values('Alexander','Carson',2005-09-01)
+Insert into Student values('Alonso','Meredith',2004-09-01)
+Insert into Student values('Anand','Arturo',2006-09-01)
+Insert into Student values('Barzdukas','Gytis',2003-09-26)
+Insert into Student values('Li','Yan',2005-02-01)
+Insert into Student values('Justice','Peggy',2002-08-01)
+Insert into Student values('Norman','Laura',2005-05-12)
+Insert into Student values('Olivetto','Nino',2005-03-13)
+
+
+go
+
+Insert into Course values(1050,'Chemistry',3)
+Insert into Course values(4022,'Microeconomics',3)
+Insert into Course values(4041,'Macroeconomics',3)
+Insert into Course values(1045,'Calculus',4)
+Insert into Course values(3141,'Trigonometry',4)
+Insert into Course values(2021,'Composition',3)
+Insert into Course values(2042,'Literature',3)
+go
+insert into Enrollment values(1050,8,1)
+insert into Enrollment values(4022,8,2)
+insert into Enrollment values(4041,2,1)
+insert into Enrollment values(1045,2,6)
+insert into Enrollment values(3141,3,1)
+insert into Enrollment values(2021,3,4)
+insert into Enrollment values(1050,4,3)
+insert into Enrollment values(2021,4,1)
+insert into Enrollment values(4022,5,6)
+insert into Enrollment values(4041,5,1)
+insert into Enrollment values(1045,6,1)
+insert into Enrollment values(3141,6,2)
+insert into Enrollment values(3141,7,1)
+insert into Enrollment values(2021,7,4)
